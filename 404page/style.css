@@ -1,0 +1,83 @@
+
+  #space-invaders {
+    margin: 0 auto;
+    display: block;
+    background: white
+  }
+  #restart {
+    font-family: robotolight;
+    color: #030303;
+    font-size: 14px;
+    background: none;
+    border: none;
+    border-bottom: 2.23px dotted grey;
+    line-height: 35px;
+  }
+  .game__btn {
+    display: inline-block;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    padding-top: 15px;
+  }
+  .game__option {
+    margin-bottom: 40px;
+  }
+  #point {
+    float: right;
+    padding-right: 60px;
+    padding-top: 15px;
+
+    font-family: robotobold;
+    color:  #030303;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+  }
+  #descrpiption__left_side {
+    padding-left: 32px;
+    padding-top: 39px;
+    display: inline-block;
+  }
+  .game__descrpiption{
+    font-family: robotolight;
+    color:  #030303;
+    font-size: 14px;
+  }
+  #descrpiption__right_side {
+    padding-right: 32px;
+    padding-top: 39px;
+    display: inline-block;
+    float: right;
+  }
+  #descrpiption__right_side a {
+    text-decoration: none;
+    color: #030303;
+    border-bottom: 2.23px dotted grey;
+    padding-bottom: 5px;
+  }
+  .hide {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .lost {
+    background-color: rgb(17,17,17);
+
+  }
+  .game {
+    height: 100%;
+    position: relative;
+  }
+  #restart_btn {
+    position: absolute;
+    top: 70.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 26.86%;
+    height: 11.19%;
+    background-color: rgb(255, 255, 255);
+
+    font-size: 26px;
+    font-family: robotobold;
+    color:  #000000;
+  }

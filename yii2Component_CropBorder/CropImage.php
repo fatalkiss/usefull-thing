@@ -190,14 +190,14 @@ class CropImage extends Component
 
                      if($extension__image == "png") {
 
-                        header ('Content-Type: image/png');
-                         imagepng($newim);
+                        // header ('Content-Type: image/png');
+                        // imagepng($newim);
                          imagepng($newim,$path.$image__name.".".$extension__image);
 
                      } else if ($extension__image =="jpg" || $extension__image == "jpeg") {
 
-                         header("Content-Type: image/jpeg");
-                         imagejpeg($newim);
+                        // header("Content-Type: image/jpeg");
+                         //imagejpeg($newim);
                          imagejpeg($newim,$path.$image__name.".".$extension__image);
                      }
 

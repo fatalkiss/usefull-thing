@@ -37,10 +37,10 @@ class CropImage extends Component
 
      'borders' => array
      (
-         'top' => array ('remove' => true, 'color' => 0xFFFFFF, 'tolerance' => $tolerance), // tolerance like (0xFFFFFF-0xCCCCCC)
-         'bottom' => array ('remove' => true, 'color' => 0xFFFFFF, 'tolerance' => $tolerance),
-         'left' => array ('remove' => true, 'color' => 0xFFFFFF, 'tolerance' => $tolerance),
-         'right' => array ('remove' => true, 'color' => 0xFFFFFF, 'tolerance' => ($tolerance))
+         'top' => array ('remove' => true, 'color' => $border_color, 'tolerance' => $tolerance), // tolerance like (0xFFFFFF-0xCCCCCC)
+         'bottom' => array ('remove' => true, 'color' => $border_color, 'tolerance' => $tolerance),
+         'left' => array ('remove' => true, 'color' => $border_color, 'tolerance' => $tolerance),
+         'right' => array ('remove' => true, 'color' => $border_color, 'tolerance' => ($tolerance))
      )
  );
 
@@ -197,7 +197,7 @@ class CropImage extends Component
                      } else if ($extension__image =="jpg" || $extension__image == "jpeg") {
 
                         // header("Content-Type: image/jpeg");
-                         //imagejpeg($newim);
+                        // imagejpeg($newim);
                          imagejpeg($newim,$path.$image__name.".".$extension__image);
                      }
 
